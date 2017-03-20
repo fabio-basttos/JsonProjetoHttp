@@ -15,5 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        textJSON = (TextView) findViewById(R.id.textJSON);
+    }
+
+    public void novaTela(View v){
+        Intent intent = new Intent(MainActivity.this,JSONActivity.class);
+        startActivity(intent);
     }
 }
